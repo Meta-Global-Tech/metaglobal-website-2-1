@@ -1,6 +1,9 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
-import { Link } from "@nextui-org/link";
+// import { Link } from "@nextui-org/link";
+import NextLink from "next/link";
+import { link as linkStyles } from "@nextui-org/theme";
+
 import clsx from "clsx";
 
 import { Providers } from "./providers";
@@ -51,30 +54,42 @@ export default function RootLayout({
             </main>
             <Divider className="my-1" />
 
-            <footer className="w-full flex items-center justify-center py-3">
-              <Link
+            <footer className="w-full flex space-x-6 items-center justify-center py-3">
+              {siteConfig.navItems.map((item) => (
+                <NextLink
+                  className={clsx(
+                    linkStyles({ color: "foreground" }),
+                    "data-[active=true]:text-primary data-[active=true]:font-medium"
+                  )}
+                  color="foreground"
+                  href={item.href}
+                >
+                  {item.label}
+                </NextLink>
+              ))}
+              {/* <NextLink
                 className="flex items-center gap-1 text-current"
                 href="/"
                 title="MetaGlobal"
               >
                 <p className="text-primary">Home</p>
-              </Link>
+              </NextLink>
               <Spacer x={6} />
-              <Link
+              <NextLink
                 className="flex items-center gap-1 text-current"
                 href="/careers"
                 title="MetaGlobal Careers"
               >
                 <p className="text-primary">Careers</p>
-              </Link>
+              </NextLink>
               <Spacer x={6} />
-              <Link
+              <NextLink
                 className="flex items-center gap-1 text-current"
                 href="/about"
                 title="MetaGlobal About Us"
               >
                 <p className="text-primary">About Us</p>
-              </Link>
+              </NextLink> */}
             </footer>
           </div>
         </Providers>

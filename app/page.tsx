@@ -2,7 +2,7 @@ import { Link } from "@nextui-org/link";
 import { Snippet } from "@nextui-org/snippet";
 import { Code } from "@nextui-org/code";
 import { button as buttonStyles } from "@nextui-org/theme";
-
+import { WorkingWithUs } from "@/components/working-with-us";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
@@ -57,10 +57,8 @@ export default function Home() {
           <li> QA automation engineers</li>
         </ul>
       </div>
-      <div className="mt-12">
-        <h2>Working with us is easy</h2>
-        Connect with us (quick meeting) → Roadmapping (Planning) →
-        Engagement/Sprints delivering incremental value in each sprint.
+      <div className="mt-12 text-center justify-center">
+        <WorkingWithUs />
       </div>
       <Divider className="my-4" />
       <ScheduleCallModal />
