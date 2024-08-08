@@ -14,9 +14,9 @@ import { title, subtitle } from "@/components/primitives";
 
 export const WorkingWithUs = () => {
   return (
-    <>
-      <div className="inline-block max-w-xlg text-center justify-center">
-        <h1 className={subtitle({ class: "mt-2" })}>Working with us is easy</h1>
+    <div className="pb-12">
+      <div className="inline-block max-w-xlg text-center justify-center pb-12">
+        <h1 className={subtitle({ class: "" })}>Working with us is easy</h1>
       </div>
       <div className="flex flex-col items-center justify-center">
         <Card>
@@ -24,13 +24,17 @@ export const WorkingWithUs = () => {
             <p>Connect with us (quick meeting)</p>
           </CardBody>
         </Card>
-        <p className="bold">→</p>
+        <br/>
+        <p className="bold">↓</p>
+        <br/>
         <Card>
           <CardBody>
             <p>Roadmapping (Planning)</p>
           </CardBody>
         </Card>
-        <p className="bold">→</p>
+        <br/>
+        <p className="bold">↓</p>
+        <br/>
         <Card>
           <CardBody>
             <p>
@@ -39,6 +43,6 @@ export const WorkingWithUs = () => {
           </CardBody>
         </Card>
       </div>
-    </>
+    </div>
   );
 };
