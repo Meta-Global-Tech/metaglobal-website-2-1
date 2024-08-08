@@ -23,7 +23,7 @@ jobs:
 
 
       - name: Build with Next.js 🏗️
-        run: npx next build
+        run: npm run build
       
       - name: Check paths
         run: ls -all
