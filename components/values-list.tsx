@@ -11,7 +11,7 @@ import {Spacer} from "@nextui-org/react";
 // import { useRouter } from 'next/router';
 
 export const ValueList = ()=>{
-  const basePath = 'metaglobal-website-2-1'
+  const basePath = ''
   return (
     <div className="text-center justify-center">
     <ul className="text-center justify-center space-y-4">
