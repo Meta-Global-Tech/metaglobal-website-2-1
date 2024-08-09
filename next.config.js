@@ -9,8 +9,8 @@ const nextConfig = {
     output: "export",  // <=== enables static exports
     // reactStrictMode: true,
     basePath: "/metaglobal-website-2-1",
-    //   images: {unoptimized: true},
-    //   experimental: {images: {unoptimized: true}},
+    images: { unoptimized: true },
+    experimental: { images: { unoptimized: true } },
 }
 
 module.exports = nextConfig
