@@ -19,58 +19,9 @@ export default function CareersPage() {
       <Divider className="my-4" />
       <span>Join our awesome team !</span>
       <section className="flex-col space-y-8  gap-8 columns-1 md:columns-2 py-8 md:py-10">
-        <JobCard />
-        {/* <Spacer x={8} /> */}
-        <JobCard />
-        {/* <Spacer x={8} /> */}
-        <JobCard />
-        {/* <Spacer x={8} /> */}
-        <JobCard />
-        {/* <Spacer x={8} /> */}
-        <JobCard />
+        {/* <JobCard /> */}
       </section>
-      {/* <div className="inline-block max-w-lg text-center justify-center">
-      <h1 className={title()}>Careers&nbsp;</h1>
-      <h1 className={title({ color: "violet" })}>beautiful&nbsp;</h1>
-      <br />
-      <h1 className={title()}>
-        websites regardless of your design experience.
-      </h1>
-      <h2 className={subtitle({ class: "mt-4" })}>
-        Beautiful, fast and modern React UI library.
-      </h2>
-    </div>
-
-    <div className="flex gap-3">
-      <Link
-        isExternal
-        className={buttonStyles({
-          color: "primary",
-          radius: "full",
-          variant: "shadow",
-        })}
-        href={siteConfig.links.docs}
-      >
-        Documentation
-      </Link>
-      <Link
-        isExternal
-        className={buttonStyles({ variant: "bordered", radius: "full" })}
-        href={siteConfig.links.github}
-      >
-        <GithubIcon size={20} />
-        GitHub
-      </Link>
-    </div>
-
-    <div className="mt-8">
-      <Snippet hideCopyButton hideSymbol variant="flat">
-        <span>
-          Get started by editing <Code color="primary">app/page.tsx</Code>
-        </span>
-      </Snippet>
-    </div> */}
-      {/* </section> */}
+      
     </>
   );
 }
