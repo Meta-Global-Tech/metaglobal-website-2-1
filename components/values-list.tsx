@@ -8,7 +8,10 @@ import {Avatar} from "@nextui-org/react";
 import {Image} from "@nextui-org/react";
 import NextImage from "next/image";
 import {Spacer} from "@nextui-org/react";
+import { useRouter } from 'next/router';
+
 export const ValueList = ()=>{
+  const router = useRouter();
   return (
     <div className="text-center justify-center">
     <ul className="text-center justify-center space-y-4">
@@ -22,7 +25,7 @@ export const ValueList = ()=>{
       as={NextImage}
       width={32}
       height={32}
-      src="/icons/tableau.ico"
+      src={`${router.basePath}/icons/tableau.ico`}
       alt="tableau logo"
     />
     <Spacer x={1} />
@@ -30,7 +33,7 @@ export const ValueList = ()=>{
       as={NextImage}
       width={32}
       height={32}
-      src="/icons/sisense.png"
+      src={`${router.basePath}/icons/sisense.png`}
       alt="sisense logo"
     />
     <Spacer x={1} />
@@ -39,7 +42,7 @@ export const ValueList = ()=>{
       as={NextImage}
       width={32}
       height={32}
-      src="/icons/powerbi.png"
+      src={`${router.basePath}/icons/powerbi.png`}
       alt="powerbi logo"
     />
     <Spacer x={1} />
@@ -48,7 +51,7 @@ export const ValueList = ()=>{
       as={NextImage}
       width={32}
       height={32}
-      src="/icons/metabase.png"
+      src={`${router.basePath}/icons/metabase.png`}
       alt="metabase logo"
     />
 
@@ -65,7 +68,7 @@ export const ValueList = ()=>{
       as={NextImage}
       width={32}
       height={32}
-      src="/icons/android.png"
+      src={`${router.basePath}/icons/android.png`}
       alt="Android logo"
     />
     <Spacer x={1} />
@@ -74,7 +77,7 @@ export const ValueList = ()=>{
       as={NextImage}
       width={32}
       height={32}
-      src="/icons/apple.png"
+      src={`${router.basePath}/icons/apple.png`}
       alt="Apple logo"
     />
       <Spacer x={1} />
@@ -83,7 +86,7 @@ export const ValueList = ()=>{
   as={NextImage}
   width={32}
   height={32}
-  src="/icons/web1.png"
+  src={`${router.basePath}/icons/web1.png`}
   alt="web logo"
 />
       </span>
@@ -98,7 +101,7 @@ export const ValueList = ()=>{
       as={NextImage}
       width={32}
       height={32}
-      src="/icons/robot.png"
+      src={`${router.basePath}/icons/robot.png`}
       alt="Robot"
     />
       </span>
@@ -113,7 +116,7 @@ export const ValueList = ()=>{
       as={NextImage}
       width={32}
       height={32}
-      src="/icons/solana.png"
+      src={`${router.basePath}/icons/solana.png`}
       alt="solana logo"
     />
     <Spacer x={1} />
@@ -122,7 +125,7 @@ export const ValueList = ()=>{
       as={NextImage}
       width={32}
       height={32}
-      src="/icons/ether.png"
+      src={`${router.basePath}/icons/ether.png`}
       alt="ether logo"
     />
 </span>
