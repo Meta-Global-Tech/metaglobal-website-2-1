@@ -59,7 +59,7 @@ export default function Home() {
           <li> DevOps, </li>
           <li> Full stack, </li>
           <li> Machine learning, </li>
-          <li> UI/UX engineers,</li>
+          <li> UI/UX,</li>
           <li> QA automation </li>
           <li> engineers. </li>
 
